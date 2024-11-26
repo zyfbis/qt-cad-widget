@@ -9,5 +9,9 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+public slots:
+    void slotOpen();
+    void slotReset();
 };
 #endif // MAINWINDOW_H

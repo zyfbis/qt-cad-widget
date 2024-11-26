@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.27)
 project(QtCadWidget)
 
+# from https://www.boost.org/users/download/
 set(BOOST_DIR "${CMAKE_SOURCE_DIR}/boost_1_86_0")
 set(Boost_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/boost_1_86_0")
 if (MSVC)
