@@ -1,4 +1,5 @@
 #include <QDir>
+#include <QFileInfo>
 #include <QPushButton>
 #include <QHBoxLayout>
 #include <QVBoxLayout>
@@ -10,7 +11,11 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    ViewerWidget::init("CompanyName", "AppName", QDir::current().absoluteFilePath("fonts"));
+    // 字体文件路径
+    QDir codeDir = QFileInfo(__FILE__).dir();
+    QDir fontDir = codeDir.filePath("../fonts");
+    ViewerWidget::init("CompanyName", "AppName", fontDir.absolutePath());
+
     setWindowTitle("ViewerLib Example");
     resize(800, 600);
 

@@ -16,3 +16,4 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOUIC_OPTIONS --connections string)
 
 add_subdirectory(LibreCAD)
+add_subdirectory(example)
