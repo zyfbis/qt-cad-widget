@@ -66,7 +66,7 @@ void MainWindow::slotOpen()
     {
         QMessageBox::warning(this, QStringLiteral("错误"), QStringLiteral("打开文件失败"));
     }
-    viewerWidget->slotSetFont("simsun"); // simhei
+    viewerWidget->slotSetFont("simsun", true); // simhei
 }
 
 void MainWindow::slotReset()

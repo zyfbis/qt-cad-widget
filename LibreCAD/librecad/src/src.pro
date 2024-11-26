@@ -7,6 +7,9 @@ DISABLE_POSTSCRIPT = false
 #uncomment to enable a Debugging menu entry for basic unit testing
 #DEFINES += LC_DEBUGGING
 
+BOOST_DIR = ../../../boost_1_86_0
+BOOST_LIBDIR = ../../../boost_1_86_0
+
 DEFINES += DWGSUPPORT
 DEFINES -= JWW_WRITE_SUPPORT
 

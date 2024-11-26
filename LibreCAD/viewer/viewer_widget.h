@@ -22,9 +22,9 @@ public:
     ~ViewerWidget();
 
 public slots:
-    bool slotOpen(const QString &fileName);    // 打开新的DXF文件
-    void slotClear();                          // 清空所有图形
-    void slotSetFont(const QString &fontName); // 递归地更改全部Text的字体
+    bool slotOpen(const QString &fileName);                      // 打开新的DXF文件
+    void slotClear();                                            // 清空所有图形
+    void slotSetFont(const QString &fontName, bool onlyChinese); // 递归地更改全部Text的字体，onlyChinese为true时只更改包含中文的Text
 
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override; // 鼠标左右键事件改为中键
